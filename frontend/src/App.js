@@ -17,6 +17,10 @@ function App() {
 
   return (
     <div>
+      <h1>รายการสินค้าของฉัน</h1>
+      <h2>{baseURL}</h2>
+      <h3>{process.env.NODE_ENV}</h3>
+
       {
        products.map(element => {
           return (

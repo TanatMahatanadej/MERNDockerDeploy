@@ -22,7 +22,6 @@ app.use(function(req, resp, next) {
 	next();
 })
 
-
 app.get("/api/products", (req, resp) => {
 
 	MongoClient.connect(
@@ -43,7 +42,6 @@ app.get("/api/products", (req, resp) => {
 	)
 })
 
-
 app.listen(3000, () => {
-    console.log('Server listening on port 3000')
+    console.log('Server listening on port 3000')
 })

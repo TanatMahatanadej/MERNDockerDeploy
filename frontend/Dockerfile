@@ -16,13 +16,13 @@
 #CMD [ "npm","start" ]
 
 
-#base image
+ #base image
 FROM node:alpine as builder
 
 #working directory
 WORKDIR /usr/app
 
-#copy package json
+#copy package jsondocke
 COPY ./package.json .
 RUN npm install
 COPY . .
