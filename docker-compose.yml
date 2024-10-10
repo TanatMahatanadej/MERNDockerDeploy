@@ -40,8 +40,8 @@ services:
       - /usr/app/node_modules
       - ./frontend:/usr/app
     ports:
-      #- 8181:3000
-      - 8181:80
+      #- 8181:80
+      - 80:80
       
 
 networks:

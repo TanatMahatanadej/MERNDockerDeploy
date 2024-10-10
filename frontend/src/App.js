@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
-const baseURL = "http://localhost:3333/api/products"
+const baseURL = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BASE_PROD_URL: process.env.REACT_APP_BASE_DEV_URL
 
 function App() {
 
