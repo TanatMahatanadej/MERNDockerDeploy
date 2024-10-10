@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
-const baseURL = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BASE_PROD_URL: process.env.REACT_APP_BASE_DEV_URL
+const baseURL = "http://localhost:3333/api/products"
 
 function App() {
 
@@ -17,9 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1>รายการสินค้าของฉัน</h1>
-      <h2>{baseURL}</h2>
-      <h3>{process.env.NODE_ENV}</h3>
+
 
       {
        products.map(element => {
