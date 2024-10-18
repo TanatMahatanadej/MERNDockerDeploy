@@ -13,7 +13,8 @@ services:
     depends_on:
       - mongodb
     build: nodejs/
-    image: mern_nodejs:1.0
+    #image: mern_nodejs:1.0
+    image: tanatmahatanadej/mern_nodejs:1.0
     container_name: mern_nodejs
     restart: always
     networks:
@@ -31,7 +32,8 @@ services:
     depends_on:
       - mongodb
     build: frontend/
-    image: mern_reactjs:1.0
+    #image: mern_reactjs:1.0
+    image: tanatmahatanadej/mern_reactjs:1.0
     container_name: mern_reactjs
     restart: always
     networks:
