@@ -1,5 +1,5 @@
 # Base Image
-FROM node:alpine as builder
+FROM node:20-alpine as builder
 
 # Working Directory (WORKDIR)
 WORKDIR /usr/app

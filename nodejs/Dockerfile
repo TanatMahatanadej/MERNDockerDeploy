@@ -1,6 +1,5 @@
 # Base Image
-# Base Image
-FROM node:lts-alpine
+FROM node:20-alpine
 
 # Working Directory (WORKDIR)
 WORKDIR /usr/app
